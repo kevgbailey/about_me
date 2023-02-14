@@ -1,0 +1,108 @@
+
+
+body{
+ background-image: url("fancy-cushion.webp");
+ font-family:Verdana, Geneva, Tahoma, sans-serif; 
+ color: rgb(233, 233, 233);
+}
+.picture{
+ float: right;
+ border-radius: 20px;
+ box-shadow: rgb(67, 67, 67) 5px 5px;
+ border: white solid 5px;
+ margin: 15px;
+}
+.picture:hover{
+    transform: scale(1.05);
+}
+p{
+    margin: 50px;
+}
+
+h1,h2{
+animation-name: titleAnimation;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+}
+h1{
+    text-shadow: white 1px 1px 5px;
+}
+
+h2{
+margin-top: 20px;
+margin-bottom: 6px;
+}
+.title span{
+    animation-name: shuffle;
+    animation-iteration-count: infinite;
+    animation-duration: 25s; 
+    display: inline-block;
+}
+@keyframes titleAnimation{
+    0%{color:rgb(172, 233, 253)}
+    25%{color: lightpink}
+    50%{color: rgb(216, 255, 216)}
+    75%{color:rgb(252, 255, 190)}
+    100%{color: rgb(172, 233, 253)}
+}
+@keyframes shuffle{
+    0%{transform: translateX(0);}
+    50%{transform: translateX(75vw);}
+    100%{transform: translateX(0);}
+}
+
+th, td { 
+    spacing: 3px;
+    padding: 3px;
+    font-weight: 600;
+}
+div.haiku{
+    text-align: center;
+
+}
+table, th, td{
+    background-color: rgb(51, 51, 51);
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+}
+th{
+    background-color:rgb(182, 182, 182);
+    color: rgb(44, 44, 44);
+    text-decoration: italic;
+}
+table{
+    table-layout: fixed;
+    width: 850px;
+}
+td.english{
+    background-color: rgb(255, 245, 155);
+    color: rgb(67, 67, 67);
+}
+
+td.bio{
+    background-color: rgb(77, 79, 151);
+    color: white;
+}
+td.dsa{
+    background-color: rgb(255, 190, 110);
+    color: rgb(67, 67, 67);
+}
+td.web{
+    background-color: rgb(126, 255, 130);
+    color: rgb(67, 67, 67);
+}
+
+td.lunch{
+    background-color: rgb(240, 240, 240);
+    color: rgb(67, 67, 67);
+}
+
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(137, 208, 232)
+}
+
+a:hover{
+text-decoration:underline;
+}
