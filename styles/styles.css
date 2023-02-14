@@ -50,7 +50,9 @@ margin-bottom: 6px;
     50%{transform: translateX(75vw);}
     100%{transform: translateX(0);}
 }
-
+.haiku-title{
+align-items: center;
+}
 th, td { 
     spacing: 3px;
     padding: 3px;
